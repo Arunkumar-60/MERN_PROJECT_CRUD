@@ -17,30 +17,30 @@
             <div class="new_user">
                 <div class="form-group">
                     <label for="name" class="text-light">name</label>
-                    <input type="hidden" name="id" value="">
-                    <input type="text" name="name" value="" placeholder="Jon doe">
+                    <input type="hidden" name="id" value="<%= user._id%>">
+                    <input type="text" name="name" value="<%= user.name%>" placeholder="Jon doe">
                 </div>
         
                 <div class="form-group">
                     <label for="email" class="text-light">Email</label>
-                    <input type="text" name="email" value="" placeholder="Jondoe@gmail.com">
+                    <input type="text" name="email" value="<%= user.email%>" placeholder="Jondoe@gmail.com">
                 </div>
         
                 <div class="form-group">
                     <label for="phone" class="text-light">phone</label>
-                    <input type="number" name="phone" value="" placeholder="123456789">
+                    <input type="number" name="phone" value="<%= user.phone%>" placeholder="123456789">
                 </div>
         
                 <div class="form-group">
                     <label for="gender" class="text-light" style="margin-right: 1rem;">Gender</label>
         
                     <div class="radio inline">
-                        <input type="radio" id="radio-2" name="gender" value="Male">
+                        <input type="radio" id="radio-2" name="gender" value="Male"<%= user.gender == 'Male'?'checked':''%>>
                         <label for="radio-2" class="radio-label">male</label>
                     </div>
         
                     <div class="radio inline">
-                        <input type="radio" id="radio-3" name="gender" value="Female">
+                        <input type="radio" id="radio-3" name="gender" value="Female"<%= user.gender == 'Female'?'checked':''%>>
                         <label for="radio-3" class="radio-label">Female</label>
                     </div>
                 </div>

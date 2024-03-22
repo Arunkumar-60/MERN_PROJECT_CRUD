@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors');
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const bodyparser = require('body-parser')
@@ -16,6 +17,9 @@ const PORT = process.env.PORT || 8080
 
 //log requests
 app.use(morgan('tiny'))
+
+//cors for all urls routes
+app.use(cors());
 
 //mongo connect
 connectDB()
