@@ -63,11 +63,11 @@ app.use('/',require('./server/routes/router'))
 
 
 app.get('/login',(req,res)=>{
-    res.render('login.ejs')
+    res.render('login.ejs',{title:"Login Page"})
 })
 
 app.get('/register',(req,res)=>{
-    res.render('register.ejs')
+    res.render('register.ejs',{title:"Sign Up"})
 })
 
 app.post('/register',async(req,res)=>{

@@ -1,16 +1,20 @@
-<h1>Login page</h1>
+<%- include('include/_login_header')%>
+<div class="container w-25 my-4">
+    <h1>Login page</h1>
 
 <% if(messages.error) {%> <%= messages.error %> <%} %>
 
 <form action="/login" method="post">
-    <div>
-      <label for="email">email</label>
-      <input type="email" name="email" id="email" required />
+    <div class="form-group my-1">
+      <label for="email" class="my-1">email</label>
+      <input type="email" class="form-control" name="email" id="email" required />
     </div>
-    <div>
-      <label for="password">password</label>
-      <input type="password" name="password" id="password" required />
+    <div class="form-group my-1">
+      <label for="password" class="my-1">password</label>
+      <input type="password" class="form-control" name="password" id="password" required />
     </div>
-    <button type="submit">login</button>
+    <button type="submit" class="btn btn-primary my-2">login</button>
 </form>
 <a href="/register">register</a>
+</div>
+<%- include('include/_login_footer')%>
