@@ -1,0 +1,61 @@
+<!-- header  -->
+<%- include('include/_header')%>
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fa-solid fa-backward"></i> all users</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Form to update user</span>
+        </div>
+        <!-- add user form  -->
+        <form method="POST" id="update_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="name" class="text-light">name</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="name" value="" placeholder="Jon doe">
+                </div>
+        
+                <div class="form-group">
+                    <label for="email" class="text-light">Email</label>
+                    <input type="text" name="email" value="" placeholder="Jondoe@gmail.com">
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone" class="text-light">phone</label>
+                    <input type="number" name="phone" value="" placeholder="123456789">
+                </div>
+        
+                <div class="form-group">
+                    <label for="gender" class="text-light" style="margin-right: 1rem;">Gender</label>
+        
+                    <div class="radio inline">
+                        <input type="radio" id="radio-2" name="gender" value="Male">
+                        <label for="radio-2" class="radio-label">male</label>
+                    </div>
+        
+                    <div class="radio inline">
+                        <input type="radio" id="radio-3" name="gender" value="Female">
+                        <label for="radio-3" class="radio-label">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- form  -->
+    
+</main>
+
+
+<!-- footer  -->
+<%- include('include/_footer')%>
