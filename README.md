@@ -1,5 +1,5 @@
-# MERN_PROJECT_CRUD_DEALSDRAY
-this is a crud mern project for DEALSDRAY assignment
+# MERN_PROJECT_CRUD
+this is a mern stack project tp CRUD(Create, Read, Update and Delete) infoormation for User management system 
 
 # API testing done on postman
 ## link to collection
